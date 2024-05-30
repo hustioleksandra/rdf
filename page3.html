@@ -1,0 +1,104 @@
+<html>
+ <head>
+  <title>Page 3</title>
+    </head>
+    <style type="text/css">
+@import "compass/css3";
+
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.nav > ul {
+  list-style: none;
+}
+
+.nav > ul > li {
+  display: inline-block;
+}
+
+.header {
+  background: #B2FF59;
+}
+
+.footer {
+  background: #B2FF59;
+}
+
+.main {
+  text-align: left;
+  background: #FFCD8B;
+  font-style: italic; /* Курсивное начертание */
+}
+
+.aside-1 {
+  background: #BA68C8;
+}
+
+.aside-2 {
+  background: #BA68C8;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+body {
+  padding: 2em; 
+}
+ul{list-style-type:none;margin:0; padding:0; overflow:hidden;background-color:#BA68C8;}
+li{float:center;}
+li a{ display:block;color:white; text-align:center;padding:14px 16px; text-decoration:none;}
+li a:hover{ background-color:#B2FF59;}
+a { color: blue;}
+
+</style>
+ <body> 
+<div class="wrapper">
+  <header class="header"> <p>МАНДРУЄМО УКРАЇНОЮ</p>
+<nav class="nav" role='navigation'>
+  <ul>
+  <li><a href="Page1.html">Головна сторінка</a></li>
+    <li><a href="Page2.html">Закарпаття</a></li>
+    <li><a href="Page3.html">Карпати</a></li>
+    <li><a href="Page5.html">Реєстрація</a></li>
+      </ul>
+</nav>  
+  </header>
+  <article class="main">
+    <p>Карпати — історичний регіон, що займає українську частину цієї гірської системи на сході Центральної Європи. Межує з Польщею і Румунією. Тут проживають три українські субетноси: гуцули, бойки і лемки. Своєрідна ізоляція в горах сприяла збереженню їхньої культурної самобутності. Тут — найвищі в Україні гірські масиви, велика кількість заповідників, природних та ландшафтних парків, популярні туристичні маршрути, гірськолижні та бальнеологічні курорти. Саме у Карпатах збереглося багато автентичних ремесел та промислів. Тут готують за оригінальними рецептами сир та хліб, виготовляють традиційний одяг та музичні інструменти.</p>  
+  </article>
+  <aside class="aside aside-1"><img  src="C:\Users\38050\Downloads\Сайт-20240508T080739Z-001\Путівник\3.jpg" alt="Україна" width="300" height="200"></aside>
+    <aside class="aside aside-2">Соціальні мережі:<br>
+<a href="https://www.facebook.com/UkraineUA/?locale=uk_UA">Facebook</a><br>
+<a href="https://www.youtube.com/watch?v=PNiW_MdL-yk">YouTube</a>
+  </aside>
+  <footer class="footer">Сайт розроблено у 2024 році</footer>
+</div>
+
+ </body>
+</html>
